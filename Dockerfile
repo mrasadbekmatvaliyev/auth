@@ -13,11 +13,8 @@ RUN chmod +x ./gradlew
 # Copy source code
 COPY src ./src
 
-# Debug: Check files before build
-RUN ls -la && ls -la gradle && ls -la src
-
-# Build the application with verbose output
-RUN ./gradlew build -x test --no-daemon --info --stacktrace
+# Build the application
+RUN ./gradlew build -x test --no-daemon
 
 # Runtime stage
 FROM eclipse-temurin:17-jre

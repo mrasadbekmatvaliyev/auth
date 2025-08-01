@@ -62,12 +62,6 @@ application-*.properties
 mvnw
 mvnw.cmd
 target/
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
 
 ### OS ###
 .DS_Store

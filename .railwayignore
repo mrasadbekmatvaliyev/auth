@@ -1,8 +1,12 @@
 *.md
 .git
 .gitignore
+build/
 target/
 *.log
 *.tmp
 .env
 test-prod.bat
+.gradle/
+*.db
+*.sqlite

@@ -20,6 +20,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.xerial:sqlite-jdbc:3.44.1.0'
 	implementation 'org.hibernate.orm:hibernate-community-dialects:6.4.1.Final'
 	implementation 'io.jsonwebtoken:jjwt-api:0.12.3'

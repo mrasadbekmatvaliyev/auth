@@ -22,10 +22,10 @@ FROM eclipse-temurin:17-jre
 WORKDIR /app
 
 # Copy the built jar from build stage
-COPY --from=build /app/build/libs/*.jar app.jar
+COPY --from=build /app/build/libs/*.jar /app/build/libs/auth-0.0.1-SNAPSHOT.jar
 
 # Expose port
 EXPOSE 8080
 
 # Run the application
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "/app/build/libs/auth-0.0.1-SNAPSHOT.jar"]

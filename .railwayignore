@@ -1,0 +1,8 @@
+*.md
+.git
+.gitignore
+target/
+*.log
+*.tmp
+.env
+test-prod.bat
